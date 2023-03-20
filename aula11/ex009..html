@@ -7,20 +7,21 @@
     <title>NACIONALIDADE</title>
 </head>
 <body>
-   <h1>Descobrir País</h1> 
+   <h1>Buscador de Nacionalidade</h1>
    Vivendo no(a): <input type="text" name="txtp" id="txtp">
-   <input type="button" value="Verificar" onclick="procurar()">
+   <input type="button" value="Buscar" onclick="procurar()">
    <div id="res"></div>
    <script>
-        function procurar() { 
-        var txtp = window.document.querySelector("input#txtp").value
-        var res = window.document.querySelector("div#res")
-        if (txtp.toLowerCase() == "brasil") {
-            res.innerHTML = "<p>Você é Brasileiro</p>"
-        } else {
-            res.innerHTML = "<p>Você é Estrangeiro</p>"
+    function procurar() {
+        var txtp = window.document.querySelector('input#txtp').value
+        var res = window.document.querySelector('div#res')
+        if (txtp == 'Brasil') {
+            res.innerHTML = 'Você é Brasileiro!'
+        } else{
+            res.innerHTML = 'Você é Estrangeiro!'
         }
-        }
+
+    }   
    </script>
 </body>
 </html>
