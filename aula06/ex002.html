@@ -4,25 +4,29 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meu primeiro programa</title>
+    <title>HelloWorld</title>
     <style>
         body {
-            background-color: darkred;
-            font-family: 'Times New Roman', Times, serif;
-            color: yellow;
+            background: grey;
+            font: 15px Arial Black;
+        }
+        h1 {
+            color: black;
         }
     </style>
 </head>
 <body>
     <h1>Olá, mundo!</h1>
-    <p>Já me livrei da maldição.</p>
-    <script>
-        var n1 = Number(window.prompt('Digite um número: ')) // string
-        var n2 = Number(window.prompt('Digite outro número: ')) // string
+    <p>Já me livrei da maldição</p>
+    
+    <script>  
+        var n1 = Number(window.prompt("Digite um número?"))
+        var n2 = Number(window.prompt("Digite outro número?"))
         var s = n1 + n2
-        window.alert(`A soma entre ${n1} e ${n2} é igual a ${s}`) // Concatenação
-        // (number + number) para adição
+        var res = window.alert(`A soma entre ${n1} e ${n2} é igual ${s}`) //Concatenação
+        // (number + string) para adição
         // (string + string) para concatenação
     </script>
+  
 </body>
 </html>
